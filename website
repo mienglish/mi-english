@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MI English - Imersão com propósito</title>
+    <meta name="description" content="Aulas particulares de inglês 100% online, com foco em inglês acadêmico e profissional. Imersão com propósito.">
+
+    <!-- Google Fonts: League Spartan & Libre Franklin -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;600;700;900&family=Libre+Franklin:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <style>
+        :root {
+            --azul-profundo: #2817ac;
+            --vermelho-mi: #ff3131;
+            --laranja-coral: #ff7948;
+            --branco: #fefefe;
+            --cinza-medio: #737373;
+            --azul-claro: #0cc0df;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0 auto;
+            max-width: 1080px;
+            padding: 24px 16px 40px;
+            font-family: "Libre Franklin", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+            font-size: 15px;
+            line-height: 1.6;
+            color: #000000;
+            background-color: #f2f2f7;
+        }
+
+        h1, h2, h3 {
+            margin-top: 0;
+            color: var(--azul-profundo);
+            font-family: "League Spartan", system-ui, sans-serif;
+        }
+
+        /* HERO */
+        .hero {
+            background: linear-gradient(135deg, var(--azul-profundo), var(--laranja-coral));
+            color: var(--branco);
+            padding: 32px 28px 40px;
+            border-radius: 24px;
+            margin-bottom: 32px;
+            position: relative;
+            overflow: hidden;
+            text-align: center;
+        }
+
+        .hero-top {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 16px;
+            margin-bottom: 24px;
+        }
+
+        .hero-logo {
+            max-width: 200px;
+        }
+
+        .hero-logo img {
+            width: 100%;
+            height: auto;
+        }
+
+        .hero-contact {
+            text-align: right;
+            font-size: 13px;
+            opacity: 0.95;
+        }
+
+        .hero-contact div {
+            margin-bottom: 4px;
+        }
+
+        .hero-title {
+            font-size: 36px;
+            font-weight: 900;
+            text-transform: uppercase;
+            letter-spacing: 0.08em;
+            margin: 20px 0 16px 0;
+            line-height: 1.2;
+        }
+
+        .hero-subtitle {
+            font-size: 18px;
+            max-width: 600px;
+            margin: 0 auto 24px auto;
+        }
+
+        .hero-button {
+            display: inline-block;
+            padding: 12px 28px;
+            background-color: var(--vermelho-mi);
+            color: var(--branco);
+            border-radius: 999px;
+            font-weight: 700;
+            font-size: 15px;
+            text-decoration: none;
+            font-family: "League Spartan", system-ui, sans-serif;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+        }
+        .hero-button:hover {
+            background-color: #e02a2a;
+            transform: translateY(-2px);
+        }
+
+        .hero-small {
+            margin-top: 16px;
+            font-size: 13px;
+            opacity: 0.9;
+        }
+
+        /* GENERIC SECTIONS */
+        .section {
+            margin-bottom: 32px;
+            padding: 22px 22px 24px;
+            border-radius: 18px;
+            background-color: #ffffff;
+            box-shadow: 0 4px 18px rgba(0,0,0,0.04);
+        }
+
+        .section-title {
+            font-size: 28px;
+            margin-bottom: 16px;
+            text-align: center;
+        }
+
+        .two-columns {
+            display: flex;
+            gap: 22px;
+            flex-wrap: wrap;
+            align-items: center;
+        }
+
+        .col {
+            flex: 1 1 0;
+            min-width: 260px;
+        }
+
+        .photo {
+            width: 100%;
+            border-radius: 16px;
+            object-fit: cover;
+        }
+
+        ul {
+            margin-top: 6px;
+            padding-left: 18px;
+        }
+
+        li {
+            margin-bottom: 6px;
+        }
+
+        strong {
+            color: var(--azul-profundo);
+        }
+
+        /* PLANOS */
+        .plan-intro {
+            text-align: center;
+            font-size: 18px;
+            margin-bottom: 20px;
+        }
+
+        .plan-grid {
+            display: flex;
+            gap: 14px;
+            flex-wrap: wrap;
+            margin-top: 10px;
+        }
+
+        .plan-card {
+            flex: 1 1 220px;
+            background-color: #fdfdfd;
+            border-radius: 14px;
+            padding: 14px 14px 16px;
+            border: 1px solid #e0e0e0;
+            font-size: 14px;
+            transition: box-shadow 0.3s ease, transform 0.2s ease;
+        }
+
+        .plan-card:hover {
+            box-shadow: 0 6px 20px rgba(0,0,0,0.08);
+            transform: translateY(-3px);
+        }
+
+        .plan-name {
+            font-weight: 700;
+            margin-bottom: 3px;
+            color: var(--azul-profundo);
+            font-family: "League Spartan", system-ui, sans-serif;
+            font-size: 16px;
+        }
+
+        .badge-price {
+            color: var(--vermelho-mi);
+            font-weight: 700;
+            margin-bottom: 6px;
+        }
+
+        .small {
+            font-size: 12px;
+            color: var(--cinza-medio);
+        }
+
+        /* CTA FINAL */
+        .cta-final {
+            text-align: center;
+            padding: 26px 20px 30px;
+            border-radius: 20px;
+            background: linear-gradient(135deg, var(--azul-profundo), #4c5270);
+            color: var(--branco);
+            margin-bottom: 32px;
+        }
+
+        .cta-final h2 {
+            color: var(--branco);
+            margin-top: 0;
+            font-size: 28px;
+        }
+
+        .cta-buttons {
+            margin-top: 12px;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 10px 22px;
+            margin: 6px 6px;
+            border-radius: 999px;
+            font-size: 14px;
+            font-weight: 600;
+            text-decoration: none;
+            font-family: "League Spartan", system-ui, sans-serif;
+            transition: background-color 0.3s ease, border-color 0.3s ease, color 0.3s ease, transform 0.2s ease;
+        }
+
+        .btn-primary {
+            background-color: var(--vermelho-mi);
+            color: var(--branco);
+            border: 2px solid var(--vermelho-mi);
+        }
+        .btn-primary:hover {
+            background-color: #e02a2a;
+            border-color: #e02a2a;
+            transform: translateY(-2px);
+        }
+
+        .btn-outline {
+            background-color: transparent;
+            color: var(--branco);
+            border: 2px solid var(--branco);
+        }
+        .btn-outline:hover {
+            background-color: var(--branco);
+            color: var(--azul-profundo);
+            transform: translateY(-2px);
+        }
+
+        @media (max-width: 720px) {
+            .hero {
+                padding: 24px 18px 30px;
+            }
+            .hero-title {
+                font-size: 28px;
+            }
+            .hero-subtitle {
+                font-size: 16px;
+            }
+            .section-title {
+                font-size: 24px;
+            }
+            .cta-final h2 {
+                font-size: 24px;
+            }
+            .hero-top {
+                flex-direction: column;
+                align-items: center;
+            }
+            .hero-contact {
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- HERO -->
+    <section class="hero">
+        <div class="hero-top">
+            <div class="hero-logo">
+                <!-- Substitua pelo caminho da sua imagem no GitHub -->
+                <img src="images/logo-mi-english.png"
+                     alt="MI English - Imersão com propósito" />
+            </div>
+            <div class="hero-contact">
+                <div>Aulas particulares 100% online</div>
+                <div>mimicanobre2005@gmail.com</div>
+                <div>+1 (437) 665-4807</div>
+            </div>
+        </div>
+
+        <div class="hero-title">UMA IMERSÃO COM PROPÓSITO NO SEU INGLÊS.</div>
+        <div class="hero-subtitle">
+            Aulas particulares 100% online, com foco em inglês acadêmico e profissional.
+        </div>
+        <a href="https://wa.me/14376654807?text=Oi%20Mi!%20Quero%20saber%20mais%20sobre%20as%20aulas%20de%20ingl%C3%AAs!" class="hero-button">Agende sua aula experimental gratuita</a>
+        <p class="hero-small">
+            Para estudantes e profissionais que querem usar o inglês para estudar, trabalhar e viver novas experiências.
+        </p>
+    </section>
+
+    <!-- SOBRE -->
+    <section class="section">
+        <h2 class="section-title">Sobre o MI English</h2>
+        <div class="two-columns">
+            <div class="col">
+                <!-- Substitua pelo caminho da sua foto no GitHub -->
+                <img src="images/yasmin-toronto.jpg"
+                     alt="Yasmin (Teacher Mi!) em Toronto" class="photo" />
+            </div>
+            <div class="col">
+                <p>
+                    O MI English é um projeto de aulas particulares de inglês para quem quer ir além do básico
+                    e se preparar para oportunidades acadêmicas e profissionais.
+                </p>
+                <p>
+                    As aulas são pensadas para conectar o que você estuda com o que vive: textos acadêmicos,
+                    entrevistas, conversas do dia a dia e situações reais de estudo e trabalho.
+                </p>
+                <p>
+                    Tudo é 100% online, com materiais personalizados para <strong>o seu objetivo</strong>, ritmo e nível.
+                </p>
+
+                <h3>Quem vai te acompanhar nessa jornada</h3>
+                <p>
+                    Sou a Yasmin (Teacher Mi!), professora de inglês e estudante vivendo a experiência canadense na prática.
+                </p>
+                <p>Ao longo dos últimos anos, acompanhei estudantes brasileiros que queriam:</p>
+                <ul>
+                    <li>passar em provas de proficiência,</li>
+                    <li>se preparar para intercâmbios, graduação ou pós,</li>
+                    <li>ou finalmente destravar o inglês para usar no trabalho.</li>
+                </ul>
+                <p>
+                    Trago para as aulas uma combinação de <strong>base acadêmica</strong>, prática real de uso do idioma
+                    e compreensão das dúvidas típicas de quem fala português.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- COMO FUNCIONAM AS AULAS -->
+    <section class="section">
+        <h2 class="section-title">Como as aulas funcionam</h2>
+        <ul>
+            <li>
+                <strong>Plano feito para você</strong> – Antes de começarmos, faço um mapeamento do seu nível, rotina
+                e objetivos. A partir disso, montamos um plano de estudos realista – e possível de seguir.
+            </li>
+            <li>
+                <strong>Inglês para a vida real</strong> – Trabalhamos com textos, vídeos e situações ligadas a
+                estudos, trabalho e vida internacional: e-mails, apresentações, redações, entrevistas e muito mais.
+            </li>
+            <li>
+                <strong>Imersão com propósito</strong> – Gramática aparece sempre dentro de contexto: leitura, escrita,
+                conversação e feedback constante, para você entender como e por que usar cada estrutura.
+            </li>
+            <li>
+                <strong>100% online, horário combinado</strong> – Aulas individuais ao vivo, pelo Zoom/Meet, com
+                materiais compartilhados e acompanhamento entre as aulas, se necessário.
+            </li>
+        </ul>
+    </section>
+
+    <!-- PLANOS E VALORES -->
+    <section class="section">
+        <h2 class="section-title">Planos e valores</h2>
+        <p class="plan-intro">
+            Planos mensais personalizados, <strong>a partir de R$ 90 por aula</strong>.
+        </p>
+        <p style="text-align: center; margin-bottom: 20px;">
+            Escolha o formato que faz sentido para a sua rotina. Todos os planos incluem materiais personalizados e acompanhamento próximo.
+        </p>
+
+        <div class="plan-grid">
+            <div class="plan-card">
+                <div class="plan-name">Aula avulsa</div>
+                <div class="badge-price">R$ 90</div>
+                <p>Ideal para quem quer testar o formato ou precisa de ajuda pontual.</p>
+            </div>
+
+            <div class="plan-card">
+                <div class="plan-name">Plano mensal (4 aulas)</div>
+                <div class="badge-price">A partir de R$ 340</div>
+                <p>1 aula por semana, para manter contato constante com o idioma.</p>
+            </div>
+
+            <div class="plan-card">
+                <div class="plan-name">Plano mensal (8 aulas)</div>
+                <div class="badge-price">A partir de R$ 640</div>
+                <p>2 aulas por semana, para acelerar resultados.</p>
+            </div>
+
+            <div class="plan-card">
+                <div class="plan-name">Plano mensal (12 aulas)</div>
+                <div class="badge-price">A partir de R$ 900</div>
+                <p>Foco intensivo, pensado para prazos apertados (provas, mudança, aplicações).</p>
+            </div>
+        </div>
+
+        <p class="small" style="text-align: center; margin-top: 20px;">
+            *Formas de pagamento a serem combinadas diretamente com a professora. Valores podem ser atualizados; consulte para informações mais recentes.
+        </p>
+    </section>
+
+    <!-- PARA QUEM É -->
+    <section class="section">
+        <h2 class="section-title">Para quem o MI English é ideal</h2>
+        <ul>
+            <li>Estudantes que querem se preparar para intercâmbios, graduação ou pós no exterior.</li>
+            <li>Profissionais que precisam usar inglês em reuniões, apresentações e e-mails.</li>
+            <li>Pessoas que já fizeram curso de inglês, mas não se sentem seguras para usar o idioma.</li>
+            <li>Quem tem objetivos acadêmicos ou profissionais internacionais e quer alinhar o inglês a esse contexto.</li>
+        </ul>
+
+        <h3>O que você ganha ao estudar aqui</h3>
+        <ul>
+            <li>Clareza sobre seus pontos fortes e fracos no inglês.</li>
+            <li>Aulas focadas em situações reais do seu objetivo.</li>
+            <li>Feedback detalhado em escrita e fala.</li>
+            <li>Um plano de estudo que se encaixa na sua rotina, não o contrário.</li>
+        </ul>
+    </section>
+
+    <!-- CTA FINAL / CONTATO -->
+    <section class="cta-final">
+        <h2>Pronto para dar o próximo passo no seu inglês?</h2>
+        <p>
+            Me manda uma mensagem contando em que momento você está e onde quer chegar.
+            Eu te respondo com uma sugestão de caminho e a possibilidade de agendar uma aula experimental.
+        </p>
+
+        <div class="cta-buttons">
+            <a href="https://wa.me/14376654807?text=Oi%20Mi!%20Quero%20saber%20mais%20sobre%20as%20aulas%20de%20ingl%C3%AAs!" 
+               class="btn btn-primary">
+               Falar comigo no WhatsApp
+            </a>
+            <a href="mailto:mimicanobre2005@gmail.com?subject=Quero%20agendar%20uma%20aula%20experimental"
+               class="btn btn-outline">
+               Enviar e-mail e agendar uma aula experimental
+            </a>
+        </div>
+
+        <p class="small" style="margin-top: 16px; color: var(--branco);">
+            📞 +1 (437) 665-4807<br />
+            ✉️ mimicanobre2005@gmail.com
+        </p>
+    </section>
+
+</body>
+</html>
