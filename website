@@ -459,4 +459,21 @@
         </p>
 
         <div class="cta-buttons">
-            <a href="https://wa.me/14376654807?text=Oi%20Mi!%20Quero%20saber%20mais%20sobre%20as%20aulas%20
+            <a href="https://wa.me/14376654807?text=Oi%20Mi!%20Quero%20saber%20mais%20sobre%20as%20aulas%20de%20ingl%C3%AAs!" 
+               class="btn btn-primary">
+               Falar comigo no WhatsApp
+            </a>
+            <a href="mailto:mimicanobre2005@gmail.com?subject=Quero%20agendar%20uma%20aula%20experimental"
+               class="btn btn-outline">
+               Enviar e-mail e agendar uma aula experimental
+            </a>
+        </div>
+
+        <p class="small" style="margin-top: 16px; color: var(--branco);">
+            📞 +1 (437) 665-4807<br />
+            ✉️ mimicanobre2005@gmail.com
+        </p>
+    </section>
+
+</body>
+</html>
