@@ -65,12 +65,13 @@
         }
 
         .hero-logo {
-            max-width: 200px;
+            max-width: 220px;
         }
 
         .hero-logo img {
             width: 100%;
             height: auto;
+            display: block;
         }
 
         .hero-contact {
@@ -152,6 +153,7 @@
             width: 100%;
             border-radius: 16px;
             object-fit: cover;
+            display: block;
         }
 
         ul {
@@ -301,8 +303,9 @@
     <section class="hero">
         <div class="hero-top">
             <div class="hero-logo">
-                <!-- Substitua pelo caminho da sua imagem no GitHub -->
-                <img src="images/logo-mi-english.png"
+                <!-- Aqui uso exatamente o nome do arquivo que você subiu -->
+                <!-- Se colocar dentro de uma pasta 'images', troque para: images/MiEnglish-Panfleto-De-Aulas-FINAL-_1_.jpeg -->
+                <img src="MiEnglish-Panfleto-De-Aulas-FINAL-_1_.jpeg"
                      alt="MI English - Imersão com propósito" />
             </div>
             <div class="hero-contact">
@@ -327,8 +330,9 @@
         <h2 class="section-title">Sobre o MI English</h2>
         <div class="two-columns">
             <div class="col">
-                <!-- Substitua pelo caminho da sua foto no GitHub -->
-                <img src="images/yasmin-toronto.jpg"
+                <!-- Também uso o nome exato do arquivo que você mandou -->
+                <!-- Se for para uma pasta 'images', troque para: images/WhatsApp-Image-2025-07-30-at-14.34.30.jpg -->
+                <img src="WhatsApp-Image-2025-07-30-at-14.34.30.jpg"
                      alt="Yasmin (Teacher Mi!) em Toronto" class="photo" />
             </div>
             <div class="col">
@@ -422,7 +426,8 @@
         </div>
 
         <p class="small" style="text-align: center; margin-top: 20px;">
-            *Formas de pagamento a serem combinadas diretamente com a professora. Valores podem ser atualizados; consulte para informações mais recentes.
+            *Formas de pagamento a serem combinadas diretamente com a professora.
+            Valores podem ser atualizados; consulte para informações mais recentes.
         </p>
     </section>
 
@@ -454,21 +459,4 @@
         </p>
 
         <div class="cta-buttons">
-            <a href="https://wa.me/14376654807?text=Oi%20Mi!%20Quero%20saber%20mais%20sobre%20as%20aulas%20de%20ingl%C3%AAs!" 
-               class="btn btn-primary">
-               Falar comigo no WhatsApp
-            </a>
-            <a href="mailto:mimicanobre2005@gmail.com?subject=Quero%20agendar%20uma%20aula%20experimental"
-               class="btn btn-outline">
-               Enviar e-mail e agendar uma aula experimental
-            </a>
-        </div>
-
-        <p class="small" style="margin-top: 16px; color: var(--branco);">
-            📞 +1 (437) 665-4807<br />
-            ✉️ mimicanobre2005@gmail.com
-        </p>
-    </section>
-
-</body>
-</html>
+            <a href="https://wa.me/14376654807?text=Oi%20Mi!%20Quero%20saber%20mais%20sobre%20as%20aulas%20
