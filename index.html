@@ -277,6 +277,42 @@
             transform: translateY(-2px);
         }
 
+        /* ========== TONY, O MASCOTE ========== */
+        .tony-intro {
+            background: linear-gradient(135deg, #f8f9ff, #ffffff);
+            border: 2px solid var(--azul-claro);
+        }
+
+        .tony-showcase {
+            display: flex;
+            gap: 32px;
+            align-items: center;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .tony-image-large {
+            flex: 0 0 auto;
+        }
+
+        .tony-image-large img {
+            width: 400px;
+            max-width: 100%;
+            height: auto;
+        }
+
+        .tony-description {
+            flex: 1 1 400px;
+            text-align: left;
+        }
+
+        @media (max-width: 720px) {
+            .tony-image-large img {
+                width: 280px;
+            }
+        }
+        /* ========== FIM TONY ========== */
+
         @media (max-width: 720px) {
             .hero {
                 padding: 24px 18px 30px;
@@ -331,69 +367,99 @@
     </p>
 </section>
 
-    <!-- SOBRE -->
-    <section class="section">
-        <h2 class="section-title">Sobre o MI English</h2>
-        <div class="two-columns">
-            <div class="col">
-                <img src="WhatsApp-Image-2025-07-30-at-14.34.30.jpg"
-                     alt="Yasmin (Teacher Mi!) em Toronto" class="photo" />
-            </div>
-            <div class="col">
-                <p>
-                    O MI English é um projeto de aulas particulares de inglês para quem quer ir além do básico
-                    e se preparar para oportunidades acadêmicas e profissionais.
-                </p>
-                <p>
-                    As aulas são pensadas para conectar o que você estuda com o que vive: textos acadêmicos,
-                    entrevistas, conversas do dia a dia e situações reais de estudo e trabalho.
-                </p>
-                <p>
-                    Tudo é 100% online, com materiais personalizados para <strong>o seu objetivo</strong>, ritmo e nível.
-                </p>
-
-                <h3>Quem vai te acompanhar nessa jornada</h3>
-                <p>
-                    Sou a Yasmin (Teacher Mi!), professora de inglês e estudante vivendo a experiência canadense na prática.
-                </p>
-                <p>Ao longo dos últimos anos, acompanhei estudantes brasileiros que queriam:</p>
-                <ul>
-                    <li>passar em provas de proficiência,</li>
-                    <li>se preparar para intercâmbios, graduação ou pós,</li>
-                    <li>ou finalmente destravar o inglês para usar no trabalho.</li>
-                </ul>
-                <p>
-                    Trago para as aulas uma combinação de <strong>base acadêmica</strong>, prática real de uso do idioma
-                    e compreensão das dúvidas típicas de quem fala português.
-                </p>
-            </div>
+<!-- TONY, O MASCOTE -->
+<section class="section tony-intro">
+    <h2 class="section-title">Conheça o Tony, o castor do MI English 🦫🇨🇦</h2>
+    <div class="tony-showcase">
+        <div class="tony-image-large">
+            <img src="Mascote MI English! .png" alt="Tony, o castor mascote do MI English" />
         </div>
-    </section>
+        <div class="tony-description">
+            <p>
+                Este é o <strong>Tony</strong>, o castor canadense que representa o MI English.
+                Ele é curioso, dedicado e bem trabalhador — assim como quem se compromete
+                a estudar inglês com propósito.
+            </p>
+            <p>
+                O Tony está sempre construindo pontes entre o português e o inglês para te
+                ajudar a:
+            </p>
+            <ul>
+                <li>destravar o medo de falar,</li>
+                <li>se preparar para estudos e trabalho,</li>
+                <li>e usar o inglês na vida real, dia após dia.</li>
+            </ul>
+            <p>
+                Ao longo das aulas, ele aparece em atividades, exemplos e materiais
+                para deixar a sua jornada mais leve, divertida e consistente.
+            </p>
+        </div>
+    </div>
+</section>
 
-    <!-- COMO FUNCIONAM AS AULAS -->
-    <section class="section">
-        <h2 class="section-title">Como as aulas funcionam</h2>
-        <ul>
-            <li>
-                <strong>Plano feito para você</strong> – Antes de começarmos, faço um mapeamento do seu nível, rotina
-                e objetivos. A partir disso, montamos um plano de estudos realista – e possível de seguir.
-            </li>
-            <li>
-                <strong>Inglês para a vida real</strong> – Trabalhamos com textos, vídeos e situações ligadas a
-                estudos, trabalho e vida internacional: e-mails, apresentações, redações, entrevistas e muito mais.
-            </li>
-            <li>
-                <strong>Imersão com propósito</strong> – Gramática aparece sempre dentro de contexto: leitura, escrita,
-                conversação e feedback constante, para você entender como e por que usar cada estrutura.
-            </li>
-            <li>
-                <strong>100% online, horário combinado</strong> – Aulas individuais ao vivo, pelo Zoom/Meet, com
-                materiais compartilhados e acompanhamento entre as aulas, se necessário.
-            </li>
-        </ul>
-    </section>
+<!-- SOBRE -->
+<section class="section">
+    <h2 class="section-title">Sobre o MI English</h2>
+    <div class="two-columns">
+        <div class="col">
+            <img src="WhatsApp-Image-2025-07-30-at-14.34.30.jpg"
+                 alt="Yasmin (Teacher Mi!) em Toronto" class="photo" />
+        </div>
+        <div class="col">
+            <p>
+                O MI English é um projeto de aulas particulares de inglês para quem quer ir além do básico
+                e se preparar para oportunidades acadêmicas e profissionais.
+            </p>
+            <p>
+                As aulas são pensadas para conectar o que você estuda com o que vive: textos acadêmicos,
+                entrevistas, conversas do dia a dia e situações reais de estudo e trabalho.
+            </p>
+            <p>
+                Tudo é 100% online, com materiais personalizados para <strong>o seu objetivo</strong>, ritmo e nível.
+            </p>
 
-    <!-- PLANOS E VALORES -->
+            <h3>Quem vai te acompanhar nessa jornada</h3>
+            <p>
+                Sou a Yasmin (Teacher Mi!), professora de inglês e estudante vivendo a experiência canadense na prática.
+            </p>
+            <p>Ao longo dos últimos anos, acompanhei estudantes brasileiros que queriam:</p>
+            <ul>
+                <li>passar em provas de proficiência,</li>
+                <li>se preparar para intercâmbios, graduação ou pós,</li>
+                <li>ou finalmente destravar o inglês para usar no trabalho.</li>
+            </ul>
+            <p>
+                Trago para as aulas uma combinação de <strong>base acadêmica</strong>, prática real de uso do idioma
+                e compreensão das dúvidas típicas de quem fala português.
+            </p>
+        </div>
+    </div>
+</section>
+
+<!-- COMO FUNCIONAM AS AULAS -->
+<section class="section">
+    <h2 class="section-title">Como as aulas funcionam</h2>
+    <ul>
+        <li>
+            <strong>Plano feito para você</strong> – Antes de começarmos, faço um mapeamento do seu nível, rotina
+            e objetivos. A partir disso, montamos um plano de estudos realista – e possível de seguir.
+        </li>
+        <li>
+            <strong>Inglês para a vida real</strong> – Trabalhamos com textos, vídeos e situações ligadas a
+            estudos, trabalho e vida internacional: e-mails, apresentações, redações, entrevistas e muito mais.
+        </li>
+        <li>
+            <strong>Imersão com propósito</strong> – Gramática aparece sempre dentro de contexto: leitura, escrita,
+            conversação e feedback constante, para você entender como e por que usar cada estrutura.
+        </li>
+        <li>
+            <strong>100% online, horário combinado</strong> – Aulas individuais ao vivo, pelo Zoom/Meet, com
+            materiais compartilhados e acompanhamento entre as aulas, se necessário.
+        </li>
+    </ul>
+</section>
+
+<!-- PLANOS E VALORES -->
 <section class="section">
     <h2 class="section-title">Planos e valores</h2>
     <p class="plan-intro">
@@ -447,69 +513,38 @@
     </p>
 </section>
 
-    <!-- PARA QUEM É -->
-    <section class="section">
-        <h2 class="section-title">Para quem o MI English é ideal</h2>
-        <ul>
-            <li>Estudantes que querem se preparar para intercâmbios, graduação ou pós no exterior.</li>
-            <li>Profissionais que precisam usar inglês em reuniões, apresentações e e-mails.</li>
-            <li>Pessoas que já fizeram curso de inglês, mas não se sentem seguras para usar o idioma.</li>
-            <li>Quem tem objetivos acadêmicos ou profissionais internacionais e quer alinhar o inglês a esse contexto.</li>
-        </ul>
+<!-- PARA QUEM É -->
+<section class="section">
+    <h2 class="section-title">Para quem o MI English é ideal</h2>
+    <ul>
+        <li>Estudantes que querem se preparar para intercâmbios, graduação ou pós no exterior.</li>
+        <li>Profissionais que precisam usar inglês em reuniões, apresentações e e-mails.</li>
+        <li>Pessoas que já fizeram curso de inglês, mas não se sentem seguras para usar o idioma.</li>
+        <li>Quem tem objetivos acadêmicos ou profissionais internacionais e quer alinhar o inglês a esse contexto.</li>
+    </ul>
 
-        <h3>O que você ganha ao estudar aqui</h3>
-        <ul>
-            <li>Clareza sobre seus pontos fortes e fracos no inglês.</li>
-            <li>Aulas focadas em situações reais do seu objetivo.</li>
-            <li>Feedback detalhado em escrita e fala.</li>
-            <li>Um plano de estudos que acompanha sua evolução.</li>
-        </ul>
-    </section>
-    <!-- TONY, O MASCOTE -->
-    <section class="section">
-        <h2 class="section-title">Conheça o Tony, o castor do MI English</h2>
-        <div class="two-columns">
-            <div class="col">
-                <img src="Mascote MI English! .png"
-                     alt="Tony, o castor mascote do MI English, usando a camiseta azul da escola"
-                     class="photo" />
-            </div>
-            <div class="col">
-                <p>
-                    Este é o <strong>Tony</strong>, o castor canadense que representa o MI English.
-                    Ele é curioso, dedicado e bem trabalhador — assim como quem se compromete
-                    a estudar inglês com propósito.
-                </p>
-                <p>
-                    O Tony está sempre construindo pontes entre o português e o inglês para te
-                    ajudar a:
-                </p>
-                <ul>
-                    <li>destravar o medo de falar,</li>
-                    <li>se preparar para estudos e trabalho,</li>
-                    <li>e usar o inglês na vida real, dia após dia.</li>
-                </ul>
-                <p>
-                    Ao longo das aulas, ele aparece em atividades, exemplos e materiais
-                    para deixar a sua jornada mais leve, divertida e consistente.
-                </p>
-            </div>
-        </div>
-    </section>
+    <h3>O que você ganha ao estudar aqui</h3>
+    <ul>
+        <li>Clareza sobre seus pontos fortes e fracos no inglês.</li>
+        <li>Aulas focadas em situações reais do seu objetivo.</li>
+        <li>Feedback detalhado em escrita e fala.</li>
+        <li>Um plano de estudos que acompanha sua evolução.</li>
+    </ul>
+</section>
 
-    <!-- CTA FINAL -->
-    <section class="cta-final">
-        <h2>Pronto para transformar o seu inglês?</h2>
-        <p>Fale comigo agora e agende sua aula experimental gratuita.</p>
+<!-- CTA FINAL -->
+<section class="cta-final">
+    <h2>Pronto para transformar o seu inglês?</h2>
+    <p>Fale comigo agora e agende sua aula experimental gratuita.</p>
 
-        <div class="cta-buttons">
-            <a href="https://wa.me/14376654807?text=Oi%20Mi!%20Quero%20agendar%20minha%20aula%20experimental!"
-               class="btn btn-primary">Chamar no WhatsApp</a>
+    <div class="cta-buttons">
+        <a href="https://wa.me/14376654807?text=Oi%20Mi!%20Quero%20agendar%20minha%20aula%20experimental!"
+           class="btn btn-primary">Chamar no WhatsApp</a>
 
-            <a href="mailto:mimicanobre2005@gmail.com"
-               class="btn btn-outline">Enviar e-mail</a>
-        </div>
-    </section>
+        <a href="mailto:mimicanobre2005@gmail.com"
+           class="btn btn-outline">Enviar e-mail</a>
+    </div>
+</section>
 
 </body>
 </html>
