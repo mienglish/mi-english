@@ -279,29 +279,38 @@
 
         /* ========== TONY, O MASCOTE ========== */
         .tony-intro {
-            background: linear-gradient(135deg, #f8f9ff, #ffffff);
-            border: 2px solid var(--azul-claro);
-        }
+    background: linear-gradient(135deg, #f8f9ff, #ffffff);
+    border: 2px solid var(--azul-claro);
+    /* deixa mais espaço para o Tony respirar */
+    padding-top: 32px;
+    padding-bottom: 32px;
+}
 
-        .tony-showcase {
-            display: flex;
-            gap: 32px;
-            align-items: center;
-            flex-wrap: wrap;
-            justify-content: center;
-        }
+.tony-showcase {
+    display: flex;
+    gap: 32px;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+}
 
-        .tony-image-large {
-            flex: 0 0 auto;
-        }
+.tony-image-large {
+    flex: 0 0 auto;
+}
 
+/* TONY GIGANTE NO DESKTOP */
 .tony-image-large img {
-    width: 650px;   /* Tony bem grandão no desktop */
+    width: 820px;          /* aqui ele fica realmente enorme */
     max-width: 100%;
     height: auto;
 }
 
-/* No mobile ele continua grande, mas sem quebrar o layout */
+.tony-description {
+    flex: 1 1 400px;
+    text-align: left;
+}
+
+/* RESPONSIVO NO CELULAR */
 @media (max-width: 720px) {
     .tony-showcase {
         flex-direction: column;
@@ -310,7 +319,8 @@
     }
 
     .tony-image-large img {
-        width: 380px;
+        width: 420px;      /* bem grande no mobile também */
+        max-width: 100%;
     }
 
     .tony-description {
@@ -375,7 +385,7 @@
 
 <!-- TONY, O MASCOTE -->
 <section class="section tony-intro">
-    <h2 class="section-title">Conheça o Tony, o castor do MI English 🦫🇨🇦</h2>
+    <h2 class="section-title">Conheça o Tony, o mascote do MI English 🦫🇨🇦</h2>
     <div class="tony-showcase">
         <div class="tony-image-large">
             <img src="Mascote Tony MI English.png" alt="Tony, o castor mascote do MI English" />
