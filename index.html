@@ -277,56 +277,62 @@
             transform: translateY(-2px);
         }
 
-        /* ========== TONY, O MASCOTE ========== */
+        /* ========== TONY, O MASCOTE - ENORME ========== */
         .tony-intro {
-    background: linear-gradient(135deg, #f8f9ff, #ffffff);
-    border: 2px solid var(--azul-claro);
-    /* deixa mais espaço para o Tony respirar */
-    padding-top: 32px;
-    padding-bottom: 32px;
-}
+            background: linear-gradient(135deg, #f8f9ff, #ffffff);
+            border: 2px solid var(--azul-claro);
+            padding: 40px 28px 48px;
+            text-align: center;
+        }
 
-.tony-showcase {
-    display: flex;
-    gap: 32px;
-    align-items: center;
-    flex-wrap: wrap;
-    justify-content: center;
-}
+        .tony-showcase {
+            display: flex;
+            gap: 40px;
+            align-items: center;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
 
-.tony-image-large {
-    flex: 0 0 auto;
-}
+        .tony-image-large {
+            flex: 0 0 auto;
+        }
 
-/* TONY GIGANTE NO DESKTOP */
-.tony-image-large img {
-    width: 820px;          /* aqui ele fica realmente enorme */
-    max-width: 100%;
-    height: auto;
-}
+        /* TONY GIGANTE - DESKTOP */
+        .tony-image-large img {
+            width: 900px;          /* ENORME no desktop */
+            max-width: 100%;
+            height: auto;
+            image-rendering: -webkit-optimize-contrast;
+            image-rendering: crisp-edges;
+        }
 
-.tony-description {
-    flex: 1 1 400px;
-    text-align: left;
-}
+        .tony-description {
+            flex: 1 1 420px;
+            text-align: left;
+        }
 
-/* RESPONSIVO NO CELULAR */
-@media (max-width: 720px) {
-    .tony-showcase {
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-    }
+        /* TONY GIGANTE - MOBILE */
+        @media (max-width: 720px) {
+            .tony-intro {
+                padding: 32px 20px 40px;
+            }
 
-    .tony-image-large img {
-        width: 420px;      /* bem grande no mobile também */
-        max-width: 100%;
-    }
+            .tony-showcase {
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+            }
 
-    .tony-description {
-        text-align: left;
-    }
-}
+            .tony-image-large img {
+                width: 100%;           /* ocupa toda a largura disponível no celular */
+                max-width: 600px;      /* mas não passa de 600px */
+                height: auto;
+            }
+
+            .tony-description {
+                text-align: left;
+            }
+        }
         /* ========== FIM TONY ========== */
 
         @media (max-width: 720px) {
@@ -383,36 +389,6 @@
     </p>
 </section>
 
-<!-- TONY, O MASCOTE -->
-<section class="section tony-intro">
-    <h2 class="section-title">Conheça o Tony, o mascote do MI English 🦫🇨🇦</h2>
-    <div class="tony-showcase">
-        <div class="tony-image-large">
-            <img src="Mascote Tony MI English.png" alt="Tony, o castor mascote do MI English" />
-        </div>
-        <div class="tony-description">
-            <p>
-                Este é o <strong>Tony</strong>, o castor canadense que representa o MI English.
-                Ele é curioso, dedicado e bem trabalhador — assim como quem se compromete
-                a estudar inglês com propósito.
-            </p>
-            <p>
-                O Tony está sempre construindo pontes entre o português e o inglês para te
-                ajudar a:
-            </p>
-            <ul>
-                <li>destravar o medo de falar,</li>
-                <li>se preparar para estudos e trabalho,</li>
-                <li>e usar o inglês na vida real, dia após dia.</li>
-            </ul>
-            <p>
-                Ao longo das aulas, ele aparece em atividades, exemplos e materiais
-                para deixar a sua jornada mais leve, divertida e consistente.
-            </p>
-        </div>
-    </div>
-</section>
-
 <!-- SOBRE -->
 <section class="section">
     <h2 class="section-title">Sobre o MI English</h2>
@@ -447,6 +423,36 @@
             <p>
                 Trago para as aulas uma combinação de <strong>base acadêmica</strong>, prática real de uso do idioma
                 e compreensão das dúvidas típicas de quem fala português.
+            </p>
+        </div>
+    </div>
+</section>
+
+<!-- TONY, O MASCOTE - AGORA AQUI, DEPOIS DO "SOBRE" -->
+<section class="section tony-intro">
+    <h2 class="section-title">Conheça o Tony, o castor do MI English 🦫🇨🇦</h2>
+    <div class="tony-showcase">
+        <div class="tony-image-large">
+            <img src="Mascote MI English! .png" alt="Tony, o castor mascote do MI English" />
+        </div>
+        <div class="tony-description">
+            <p>
+                Este é o <strong>Tony</strong>, o castor canadense que representa o MI English.
+                Ele é curioso, dedicado e bem trabalhador — assim como quem se compromete
+                a estudar inglês com propósito.
+            </p>
+            <p>
+                O Tony está sempre construindo pontes entre o português e o inglês para te
+                ajudar a:
+            </p>
+            <ul>
+                <li>destravar o medo de falar,</li>
+                <li>se preparar para estudos e trabalho,</li>
+                <li>e usar o inglês na vida real, dia após dia.</li>
+            </ul>
+            <p>
+                Ao longo das aulas, ele aparece em atividades, exemplos e materiais
+                para deixar a sua jornada mais leve, divertida e consistente.
             </p>
         </div>
     </div>
